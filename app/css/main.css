@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   *{
+   	font-family: 'Arial';
+    font-size: 1em;
+   }
+header #bar{
+    background-color: #3c3c3c;
+    padding:0.5em;
+    color: #fff;
+    position: relative;
+    text-align: justify;
+    font-size: 1em;
+}
+header #bar a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    float: right;
+    padding: 0.3em;
+    padding: 0.3em;
+    margin-right: 3em;
+}
+.btn-header{
+    margin-top: 0.2em;
+    margin-left: 0.2em;
+    background-color: #2a2a2a;
+    border-color: #2a2a2a;
+    border-radius: 4px;
+    box-shadow: none;
+    position: relative;
+    float: left;
+}
+#btn1{
+    margin-left: 1em;
+}
+
+header #bar2{
+    background-color: #fff;
+    padding:0.5em;
+    color: #000;
+    position: relative;
+    text-align: justify;
+    font-size: 1em;
+}
+header #bar2 a{
+    font-size: 12px;
+    color: #000;
+    position: relative;
+    float: left;
+    padding: 0.3em;
+    margin-right: 0.8em;
+
+}
+#bookmark, #report{
+    font-size: 12px;
+    position: relative;
+    float: left;
+}
+#nav{
+    background-color: #b3d4fc;
+}
+
+#nav .btn-nav{
+    position: relative;
+    float: left;
+    margin-top: 0.5em;
+    background-color: #fff;
+    border: 1px solid rgba(193, 187, 194, 1);
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#uno{
+    margin-left: 1em;
+}
+.submen{
+
+}
+.linea{
+    background-color: #398439;
+    height: 10px;
+}
+
+.linea2{
+    background-color: #2a2a2a;
+    height: 1px;
+}
+
+.logo{
+    position: relative;
+    float: left;
+    width: 90px;
+    margin-left: 30px;
+}
+#tit{
+    position: relative;
+    float: left;
+    font-size: 28px;
+    color: #398439;
+    font-weight: bold;
+}
+#sub{
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 50px;
+    font-size: 12px;
+    color: #555555;
+}
+.input-group {
+    position: relative;
+    float: right;
+    width: 250px;
+    margin-right: 90px;
+    margin-top: 20px;
+}
+
+.date p{
+    position: relative;
+    float: left;
+    margin: 10px;
+}
+
+.date .day, .date .year, .date .month{
+    position: relative;
+    float: left;
+    margin-left: 20px;
+}
+
