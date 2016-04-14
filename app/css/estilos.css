@@ -1,0 +1,271 @@
+/* 100% del ancho de la ventana del navegador */
+/* Color Negro */
+/* Color Gris Obscuro */
+/* Color Blanco */
+body {
+  width: 100%;
+  vertical-align: top;
+  font-family: arial, sans-serif;
+  font-size: 1.5em;
+  margin: auto;
+  color: #1D1D1D; }
+  body header div#bar {
+    background-color: #333333;
+    padding: 0.5em;
+    color: #fff;
+    position: relative;
+    text-align: justify;
+    font-size: 1em; }
+    body header div#bar button {
+      margin-top: 0.2em;
+      margin-left: 0.2em;
+      background-color: #2a2a2a;
+      border-color: #2a2a2a;
+      border-radius: 4px;
+      box-shadow: none;
+      position: relative;
+      float: left; }
+    body header div#bar a {
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      float: right;
+      padding: 0.3em;
+      padding: 0.3em;
+      margin-right: 3em; }
+  body header div#bar2 {
+    background-color: #fff;
+    padding: 0.5em;
+    color: #000;
+    position: relative;
+    text-align: justify;
+    font-size: .8em; }
+    body header div#bar2 li {
+      list-style-type: none;
+      position: relative;
+      float: left; }
+      body header div#bar2 li button {
+        font-size: .9em;
+        background-color: #2a2a2a;
+        border-radius: 4px;
+        height: 24px; }
+    body header div#bar2 a {
+      font-size: 1em;
+      color: #000;
+      position: relative;
+      float: left;
+      padding: 0.3em;
+      margin-right: 0.8em;
+      list-style-type: none; }
+  body container {
+    font-family: arial, sans-serif;
+    font-size: 1em; }
+    body container div ul#nav {
+      background-color: #F1F1F1;
+      width: 102.2%; }
+      body container div ul#nav li {
+        position: relative;
+        float: left; }
+        body container div ul#nav li button {
+          position: relative;
+          float: left;
+          margin-top: 0.5em;
+          background-color: #fff;
+          border: 1px solid #c1bbc2;
+          border-top-right-radius: 4px;
+          border-top-left-radius: 4px;
+          font-weight: bold; }
+    body container div div.linea {
+      background-color: #398439;
+      height: 10px;
+      margin-top: -10px; }
+    body container div img {
+      position: relative;
+      float: left;
+      width: 90px;
+      margin-left: 30px;
+      margin-bottom: -15px;
+      margin-top: 5px; }
+    body container div h1 {
+      position: relative;
+      float: left;
+      font-size: 32px;
+      color: #398439;
+      font-weight: bold; }
+    body container div p {
+      position: absolute;
+      margin-left: 120px;
+      margin-top: 50px;
+      font-size: 12px;
+      color: #555555; }
+    body container div div.input-group {
+      position: relative;
+      float: right;
+      width: 250px;
+      margin-right: 90px;
+      margin-top: 28px; }
+    body container div div hr {
+      background-color: #2a2a2a;
+      height: 1px;
+      width: 100%; }
+    body container div.date p {
+      position: relative;
+      float: left;
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-top: 0px;
+      margin-bottom: -3px; }
+    body container div.date div.day {
+      position: relative;
+      float: left;
+      margin-left: 40px;
+      margin-bottom: -3px; }
+    body container div.date div.year {
+      position: relative;
+      float: left;
+      margin-left: 40px;
+      margin-bottom: -3px; }
+    body container div.date div.month {
+      position: relative;
+      float: left;
+      width: auto;
+      margin-left: 40px;
+      margin-bottom: -3px; }
+      body container div.date div.month p {
+        position: relative;
+        float: left;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 0px; }
+    body container div div hr {
+      background-color: #2a2a2a;
+      height: 1px; }
+    body container div.Tit-sec h2 {
+      position: relative;
+      float: left;
+      font-size: 18px;
+      color: #398439;
+      margin-top: 0px; }
+    body container div.Tit-sec p {
+      position: relative;
+      float: right;
+      color: #555555;
+      margin-top: -20px;
+      margin-top: 0px; }
+    body container #table {
+      margin: 0px auto;
+      width: 100%;
+      box-shadow: 2px 2px 5px #999; }
+      body container #table div.col2 {
+        width: 85%;
+        padding: 0px;
+        position: relative;
+        margin-left: 50px;
+        padding-bottom: 15px; }
+        body container #table div.col2 .neg {
+          font-weight: bold;
+          color: #000000;
+          position: relative;
+          float: right;
+          margin-left: 80px;
+          margin-top: 3px;
+          font-size: 1.2em; }
+        body container #table div.col2 .titulo1 {
+          font-weight: bold;
+          color: #000000;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1.2em; }
+        body container #table div.col2 .norm {
+          color: #000000;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1em; }
+        body container #table div.col2 img {
+          width: 100%;
+          left: -30px; }
+      body container #table div.col1 {
+        left: -20px;
+        position: relative;
+        padding-bottom: 10px;
+        padding-top: 10px; }
+        body container #table div.col1 table {
+          border-left: 2px solid #000; }
+        body container #table div.col1 td {
+          width: 140px;
+          padding-left: 20px; }
+        body container #table div.col1 .neg {
+          font-weight: bold;
+          color: #000000;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1.2em; }
+        body container #table div.col1 .titulo1 {
+          font-weight: bold;
+          color: #B5888B;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1.2em; }
+        body container #table div.col1 .titulo2 {
+          font-weight: bold;
+          color: #86ABBE;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1.2em; }
+        body container #table div.col1 .titulo3 {
+          font-weight: bold;
+          color: #B3A8B6;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1.2em; }
+        body container #table div.col1 .titulo4 {
+          font-weight: bold;
+          color: #4D727B;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1.2em; }
+        body container #table div.col1 .titulo5 {
+          font-weight: bold;
+          color: #B69378;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1.2em; }
+        body container #table div.col1 .norm {
+          color: #000000;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 0.8em;
+          letter-spacing: 0.01px; }
+        body container #table div.col1 .line {
+          background-color: #000;
+          height: 2px;
+          margin-top: 3px;
+          margin-bottom: 3px; }
+    body container #graficas {
+      font-family: arial, sans-serif;
+      position: relative; }
+      body container #graficas .botones button {
+        float: left;
+        margin: 35px 3px;
+        font-size: 0.9em;
+        border-radius: 3px; }
+      body container #graficas .grf {
+        float: left;
+        margin-top: 70px;
+        position: absolute;
+        width: 100%; }
+        body container #graficas .grf h2 {
+          text-align: left;
+          font-size: 0.9em;
+          font-weight: bold; }
+        body container #graficas .grf img {
+          width: 80%; }

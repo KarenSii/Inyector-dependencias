@@ -97,7 +97,7 @@ header #bar2 a{
 #tit{
     position: relative;
     float: left;
-    font-size: 28px;
+    font-size: 32px;
     color: #398439;
     font-weight: bold;
 }
@@ -121,10 +121,21 @@ header #bar2 a{
     float: left;
     margin: 10px;
 }
-
 .date .day, .date .year, .date .month{
     position: relative;
     float: left;
     margin-left: 20px;
 }
 
+.Tit-sec h2{
+    position: relative;
+    float: left;
+    font-size: 20px;
+    color: #398439;
+}
+
+.Tit-sec p{
+    position: relative;
+    float: right;
+    color: #555555;
+}

@@ -1,0 +1,350 @@
+// Incializamos variables
+
+$ancho_pag: 100%; /* 100% del ancho de la ventana del navegador */
+$fuente: arial, sans-serif;
+$color_tex: #1D1D1D; /* Color Negro */
+$fondo_o: #333333; /* Color Gris Obscuro */
+$fondo_c: #F1F1F1; /* Color Blanco */
+
+// Comenzamos los estilos en SASS
+
+body {
+  width: $ancho_pag;
+  vertical-align: top;
+  font-family: $fuente;
+  font-size: 1.5em;
+  margin: auto;
+  color: $color_tex;
+  header{
+    div#bar{
+      background-color: $fondo_o;
+      padding: 0.5em;
+      color: #fff;
+      position: relative;
+      text-align: justify;
+      font-size: 1em;
+      button {
+        margin-top: 0.2em;
+        margin-left: 0.2em;
+        background-color: #2a2a2a;
+        border-color: #2a2a2a;
+        border-radius: 4px;
+        box-shadow: none;
+        position: relative;
+        float: left;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        float: right;
+        padding: 0.3em;
+        padding: 0.3em;
+        margin-right: 3em;
+      }
+    }
+    div#bar2{
+      background-color: #fff;
+      padding:0.5em;
+      color: #000;
+      position: relative;
+      text-align: justify;
+      font-size: .8em;
+      li{
+        list-style-type: none;
+        position: relative;
+        float: left;
+        button{
+          font-size: .9em;
+          background-color: #2a2a2a;
+          border-radius: 4px;
+          height: 24px;
+        }
+      }
+      a{
+        font-size: 1em;
+        color: #000;
+        position: relative;
+        float: left;
+        padding: 0.3em;
+        margin-right: 0.8em;
+        list-style-type: none;
+      }
+    }
+  }
+  container{
+    font-family: $fuente;
+    font-size: 1em;
+    div {
+      ul#nav{
+        background-color: $fondo_c;
+        width: 102.2%;
+        li {
+          position: relative;
+          float: left;
+          button {
+            position: relative;
+            float: left;
+            margin-top: 0.5em;
+            background-color: #fff;
+            border: 1px solid rgba(193, 187, 194, 1);
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    div{
+      div.linea {
+        background-color: #398439;
+        height: 10px;
+        margin-top: -10px;
+      }
+    }
+    div{
+      img{
+        position: relative;
+        float: left;
+        width: 90px;
+        margin-left: 30px;
+        margin-bottom: -15px;
+        margin-top: 5px;
+      }
+      h1{
+        position: relative;
+        float: left;
+        font-size: 32px;
+        color: #398439;
+        font-weight: bold;
+      }
+      p{
+        position: absolute;
+        margin-left: 120px;
+        margin-top: 50px;
+        font-size: 12px;
+        color: #555555;
+      }
+      div.input-group{
+        position: relative;
+        float: right;
+        width: 250px;
+        margin-right: 90px;
+        margin-top: 28px;
+      }
+    }
+    div{
+      div{
+        hr{
+          background-color: #2a2a2a;
+          height: 1px;
+          width: 100%;
+        }
+      }
+    }
+    div.date{
+      p{
+        position: relative;
+        float: left;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 0px;
+        margin-bottom: -3px;
+      }
+      div.day{
+        position: relative;
+        float: left;
+        margin-left: 40px;
+        margin-bottom: -3px;
+      }
+      div.year{
+        position: relative;
+        float: left;
+        margin-left: 40px;
+        margin-bottom: -3px;
+
+      }
+      div.month{
+        position: relative;
+        float: left;
+        width: auto;
+        margin-left: 40px;
+        margin-bottom: -3px;
+
+        p{
+          position: relative;
+          float: left;
+          margin-right: 10px;
+          margin-left: 10px;
+          margin-top: 0px;
+        }
+      }
+    }
+    div{
+      div{
+        hr{
+          background-color: #2a2a2a;
+          height: 1px;
+        }
+      }
+    }
+    div.Tit-sec{
+      h2{
+        position: relative;
+        float: left;
+        font-size: 18px;
+        color: #398439;
+        margin-top: 0px;
+      }
+      p{
+        position: relative;
+        float: right;
+        color: #555555;
+        margin-top: -20px;
+        margin-top: 0px;
+      }
+    }
+    #table{
+      margin: 0px auto;
+      width: 100%;
+      box-shadow: 2px 2px 5px #999;
+      div.col2{
+        width: 85%;
+        padding: 0px;
+        position: relative;
+        margin-left: 50px;
+        padding-bottom: 15px;
+        .neg {
+          font-weight: bold;
+          color: #000000;
+          position: relative;
+          float: right;
+          margin-left: 80px;
+          margin-top: 3px;
+          font-size: 1.2em;
+        }
+        .titulo1{
+          font-weight: bold;
+          color: #000000;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1.2em;
+        }
+        .norm {
+          color: #000000;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1em;
+        }
+        img{
+          width: 100%;
+          left: -30px;
+        }
+      }
+      div.col1{
+        left: -20px;
+        position: relative;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        table{
+          border-left: 2px solid #000;
+        }
+        td{
+          width: 140px;
+          padding-left: 20px;
+        }
+        .neg {
+          font-weight: bold;
+          color: #000000;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1.2em;
+        }
+        .titulo1{
+          font-weight: bold;
+          color: #B5888B;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1.2em;
+        }
+        .titulo2{
+          font-weight: bold;
+          color: #86ABBE;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1.2em;
+        }
+        .titulo3{
+          font-weight: bold;
+          color: #B3A8B6;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1.2em;
+        }
+        .titulo4{
+          font-weight: bold;
+          color: #4D727B;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1.2em;
+        }
+        .titulo5{
+          font-weight: bold;
+          color: #B69378;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 1.2em;
+        }
+        .norm {
+          color: #000000;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+          font-size: 0.8em;
+          letter-spacing: 0.01px;
+        }
+        .line{
+          background-color: #000;
+          height: 2px;
+          margin-top: 3px;
+          margin-bottom: 3px;
+        }
+      }
+    }
+    #graficas{
+      font-family: $fuente;
+      position: relative;
+      .botones{
+        button{
+          float: left;
+          margin: 35px 3px;
+          font-size: 0.9em;
+          border-radius: 3px;
+        }
+      }
+      .grf{
+        float: left;
+        margin-top: 70px;
+        position: absolute;
+        width: 100%;
+        h2 {
+          text-align: left;
+          font-size: 0.9em;
+          font-weight: bold;
+        }
+        img{
+          width: 80%;
+        }
+      }
+    }
+  }
+
+}
