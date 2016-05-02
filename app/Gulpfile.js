@@ -21,6 +21,9 @@ gulp.task('browser-sync', function () {
   });
 });
 
+
+
+
 gulp.task('watch', ['sass', 'browser-sync'], function () {
   gulp.watch(["scss/*.scss","scss/base/*.scss","scss/sections/*.scss","scss/style/*.scss"], ['sass']);
 });

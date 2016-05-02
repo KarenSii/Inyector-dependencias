@@ -258,6 +258,8 @@ body {
         margin: 35px 3px;
         font-size: 0.9em;
         border-radius: 3px; }
+      body container #graficas .boton {
+        clear: both; }
       body container #graficas .grf {
         float: left;
         margin-top: 70px;
@@ -269,3 +271,9 @@ body {
           font-weight: bold; }
         body container #graficas .grf img {
           width: 80%; }
+  body #graph1 div #chart1 {
+    position: relative;
+    float: left;
+    width: 50%; }
+  body #graph1 div #chart2 {
+    width: 50%; }

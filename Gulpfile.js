@@ -1,26 +1,60 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync');
+var webserver = require('gulp-webserver');
+var inject = require('gulp-inject');
+var wiredep = require('wiredep').stream;
+
+
 var paths = {
-  scss: './sass/*.scss'
 };
 
-gulp.task('sass', function () {
-  gulp.src('app/scss/estilos.scss')
-    .pipe(sass({
-      includePaths:['scss']
+
+gulp.task('inject', function() {
+  var wiredep = require('wiredep').stream;
+  var inject = require('gulp-inject');
+
+  var injectSrc = gulp.src(['app/css/*.css',
+    'app/js/*.js'], {read: false});
+
+  var injectOptions = {
+    ignorePath: '/../app'
+  }
+
+  var options = {
+    bowerJson: require('./bower.json'),
+    directory: '/../app',
+    ignorePath: '../../app'
+  }
+
+  return gulp.src('./app/*.html')
+    .pipe(wiredep(options))
+    .pipe(inject(injectSrc, injectOptions))
+    .pipe(gulp.dest('./'));
+
+});
+
+gulp.task('wiredep', function () {
+  gulp.src('/.app/index.html')
+    .pipe(wiredep({
+      directory: './app/vendor',
+      onError:function(err){
+      console.log(err.code);
+      }
     }))
-    .pipe(gulp.dest('css'));
+  .pipe(gulp.dest('./app'));
 });
 
-gulp.task('browser-sync', function () {
-  browserSync.init(["app/css/*.css", "app/js/*.js"],{
-    server:{
-      baseDir: "./"
-    }
-  });
-});
+gulp.task('watch', function(){
+  gulp.watch(['./app/css/*.css'], ['inject']);
+  gulp.watch(['./app/js/*.js'], ['inject']);
+  gulp.watch(['./bower.json'], ['wiredep']);
+})
 
-gulp.task('watch', ['sass', 'browser-sync'], function () {
-  gulp.watch(["app/scss/*.scss","app/scss/base/*.scss","app/scss/sections/*.scss","app/scss/style/*.scss"], ['sass']);
+gulp.task('serve', ['inject', 'wiredep', 'watch'], function() {
+  gulp.src('./')
+    .pipe(webserver({
+      livereload: true,
+      directoryListing: false,
+      open: true,
+      port: 3000
+    }));
 });

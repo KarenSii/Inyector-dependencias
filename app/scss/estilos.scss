@@ -330,6 +330,9 @@ body {
           border-radius: 3px;
         }
       }
+      .boton{
+        clear: both;
+      }
       .grf{
         float: left;
         margin-top: 70px;
@@ -346,5 +349,14 @@ body {
       }
     }
   }
-
+  #graph1{
+    div #chart1{
+      position: relative;
+      float: left;
+      width: 50%;
+    }
+    div #chart2{
+      width: 50%;
+    }
+  }
 }

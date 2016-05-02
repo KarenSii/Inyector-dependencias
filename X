@@ -1,0 +1,20 @@
+"angular-ui": "^0.4.0",
+    "angular": "^1.5.5",
+
+    gulp.task('bower', function(){
+      return gulp.src(mainBowerFiles(),{base:"bower_components"})
+        .pipe(gulp.dest(config.paths.bower.dest));
+    });
+
+    gulp.task('html', function(){
+      return gulp.src(config.paths.html.src)
+        .pipe(inject(
+          gulp.src(
+            mainBowerFiles(),
+            {read:false, cwd:"bower_components"}
+          ),
+          {name:"bower", addPrefix:"lib"}
+        ))
+        .pipe(minifyHTML())
+        .pipe(gulp.dest(config.paths.html.dest));
+    });
